@@ -46,6 +46,7 @@
       <HintPath>..\..\..\..\website\bin\Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Net.Http" />
@@ -64,11 +65,27 @@
   <ItemGroup>
     <Compile Include="Controllers\RequireAdminAttribute.cs" />
     <Compile Include="Controllers\AIHealthController.cs" />
+    <Compile Include="Controllers\AIBlockController.cs" />
+    <Compile Include="Controllers\AIDesignController.cs" />
     <Compile Include="Controllers\AIPageController.cs" />
     <Compile Include="Controllers\ServiceRouteMapper.cs" />
     <Compile Include="Models\HealthCheckResponse.cs" />
+    <Compile Include="Models\BlockDetailResponse.cs" />
+    <Compile Include="Models\BlockListItem.cs" />
+    <Compile Include="Models\BlockUpdateRequest.cs" />
     <Compile Include="Models\PageDetailResponse.cs" />
     <Compile Include="Models\PageListItem.cs" />
+    <Compile Include="Models\PageUpdateRequest.cs" />
+    <Compile Include="Models\PageCreateRequest.cs" />
+    <Compile Include="Models\PageDeleteRequest.cs" />
+    <Compile Include="Models\DesignControl.cs" />
+    <Compile Include="Models\DesignSettingsResponse.cs" />
+    <Compile Include="Models\DesignUpdateRequest.cs" />
+    <Compile Include="Models\PagePublishRequest.cs" />
+    <Compile Include="Models\AssetModels.cs" />
+    <Compile Include="Models\BrandingModels.cs" />
+    <Compile Include="Controllers\AIAssetController.cs" />
+    <Compile Include="Controllers\AIBrandingController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
